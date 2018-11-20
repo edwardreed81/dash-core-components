@@ -1343,6 +1343,7 @@ class Tests(IntegrationTests):
 
         self.startServer(app)
         time.sleep(1)
+        self.snapshot('Logout button')
 
         self.assertEqual(
             'logged-in',
